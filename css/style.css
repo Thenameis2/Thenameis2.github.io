@@ -111,11 +111,11 @@ header .navbar ul li a:hover{ /* lets me chnage the look of home,aboutresume and
     html{  
         left: -120%;
     }
-    #menu{
+     #menu{              /* chanages the apperance of the menu  button */
         display: block;
     }
     header.toggle{
-        left:-120%
+        left:-120%  
     }
 
 }
