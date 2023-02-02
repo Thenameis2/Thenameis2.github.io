@@ -1,93 +1,260 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mihiretu Jackson's Personal Website</title>
+    <title>Mihiretu Jackson's Personal page</title>
 
-    <!--link for font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <!--custom css link -->
-    <link rel="stylesheet" href = "css/style.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
 
-
-    
 </head>
 <body>
+    
+<!-- header section starts  -->
 
- <!--header section starts -->
+<header class="header">
 
-  <header>
-        <div class="user"> <!--link to pic of me-->
-           <img src="mihiretu1.JPG" alt="mihiretu"> 
-            <h3 class="name">Mihiretu Jackson</h3>
-            <p class="post"> Software developer</p>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">home</a></li>
-                <!-- <li><a href="#About">About Me</a></li> -->
-                <li><a href="#Resume">Resume</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <div class="user">
+        <img src="mihiretu1.JPG" alt="mihiretu">
+        <h3>Mihiretu Jackson</h3>
+        <p>Software developer</p>
+    </div>
 
-            </ul>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#contact">contact</a>
+    </nav>
 
-        </nav>
+</header>
 
-    </header>
- 
- <!--header section ends-->
+<!-- header section ends -->
 
-<div id="menu" class="fas fa-bars"></div>
+<div id="menu-btn" class="fas fa-bars"></div>
+
+<!-- theme toggler  -->
+
+<div id="theme-toggler" class="fas fa-moon"></div>
 
 <!-- home section starts  -->
 
+<section class="home" id="home">
 
-<section class="home"  id="home">
-    <!-- <h3>Hello!</h3>
-    <h1>I'm<span> Mihiretu Jackson</span></h1>
-    <p>I am a student at Virginia State University majoring in Computer Science. 
-        I have a strong interest in Software development.</p>
-    <b>We must become bigger than we have been: more courageous, greater in spirit, larger in outlook</b>
-    <p>Haile Selassie</p> -->
-    <h1 class="heading"> <span>About</span> me </h1>
-    <div class="row">
-        <div class="info">
-            <h3><span>Name:</span> Mihiretu Jackson</h3>
-            <h3><span>Age:</span> 19</h3>
-            <h3><span>Qualification:</span> BS</h3>
-            <h3><span>Position:</span> Software developer</h3>
-            <h3><span>Language:</span> English</h3>
-        </div>
+    <div class="content">
+        <h3>Mihiretu Jackson</h3>
+        <p>i am a Software developer</p>
+        <a href="#" class="btn">download CV</a>
+    </div>
 
-        <div class="counter">
-            <div class="box">
-                 <span>1</span>
-                <h3>year of experince</h3>
-            </div>
-
-            <div class="box">
-                <span>5+</span>
-                <h3>projects completed</h3>
-            </div>
-
-            <div class="box">
-                <span>5+</span>
-                <h3>projects completed</h3>
-            </div>
-
-
-        </div> 
-    </div> 
-    
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
 
 </section>
 
-<!-- home section ends  --> 
-<!-- adding about section to home -->
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> me </h1>
+
+    <div class="row">
+
+        <div class="box-container">
+            <div class="box">
+                <h3>1+</h3>
+                <p>years of experience</p>
+            </div>
+            <!-- <div class="box">
+                <h3>450+</h3>
+                <p>satisfied clients</p>
+            </div> -->
+            <div class="box">
+                <h3>20+</h3>
+                <p>working hours</p>
+            </div>
+            <!-- <div class="box">
+                <h3>10+</h3>
+                <p>awards won</p>
+            </div> -->
+        </div>
+
+        <div class="content">
+            <h3>My name is <span>Mihiretu Jackson</span></h3>
+            <p>I am a student at Virginia State University majoring in Computer Science. 
+                I have a strong interest in Software development.</p>
+                <p><b>"We must become bigger than we have been: more courageous, greater in spirit, larger in outlook"</b></p>
+                <p><i>Haile Selassie</i></p>
+            <a href="#" class="btn">contact me</a>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="progress">
+            <h3> web design <span>90%</span> </h3>
+            <div class="bar bar-1-1"><span></span></div>
+            <h3> graphic design <span>75%</span> </h3>
+            <div class="bar bar-1-2"><span></span></div>
+            <h3> UI/UX design <span>80%</span> </h3>
+            <div class="bar bar-1-3"><span></span></div>
+        </div>
+
+        <div class="progress">
+            <h3> HTML <span>95%</span> </h3>
+            <div class="bar bar-2-1"><span></span></div>
+            <h3> CSS <span>80%</span> </h3>
+            <div class="bar bar-2-2"><span></span></div>
+            <h3> javascript <span>65%</span> </h3>
+            <div class="bar bar-2-3"><span></span></div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> my <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-code"></i>
+            <h3>web design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-paint-brush"></i>
+            <h3>graphic design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-mobile"></i>
+            <h3>responsive design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>digital marketing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-search-dollar"></i>
+            <h3>SEO marketing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in.</p>
+        </div>
+
+        <div class="box">
+            <i class="fab fa-wordpress"></i>
+            <h3>wordpress</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+    <h1 class="heading"> my <span>portfolio</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/img-1.jpg" alt="">
+            <div class="content">
+                <h3>project 01</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/img-2.jpg" alt="">
+            <div class="content">
+                <h3>project 02</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/img-3.jpg" alt="">
+            <div class="content">
+                <h3>project 03</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/img-4.jpg" alt="">
+            <div class="content">
+                <h3>project 04</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/img-5.jpg" alt="">
+            <div class="content">
+                <h3>project 05</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/img-6.jpg" alt="">
+            <div class="content">
+                <h3>project 06</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> me </h1>
+
+    <form action="">
+        <input type="text" placeholder="your name" class="box">
+        <input type="email" placeholder="your email" class="box">
+        <input type="text" placeholder="subject" class="box">
+        <textarea name="" class="box" placeholder="your message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+</section>
+
+<!-- contact section ends -->
+
+<div class="credits"> created by <span>mr. web designer</span> | all rights reserved </div>
 
 
 
@@ -97,13 +264,12 @@
 
 
 
-<!-- adding about section to home -->
 
 
 
-    <!--jquery link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
 
 </body>
 </html>
