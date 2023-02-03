@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root{
-    --green:#27ae60;
+    --green:#6511f5d1;
     --black:#444;
-    --light-color:#777;
-    --bg-color:#e3a16b;
+    --light-color:rgb(15, 13, 13);
+    --bg-color:#987863c3;
     --border:.1rem solid rgba(0,0,0,.2);
-    --box-shadow:.4rem .4rem 1rem #ccc,
-                -.4rem -.4rem 1rem #fff;
+    --box-shadow:.4rem .4rem 1rem rgb(8, 8, 8),
+                -.4rem -.4rem 1rem rgb(239, 189, 189);
     --box-shadow-inset:.4rem .4rem 1rem #ccc inset,
                       -.4rem -.4rem 1rem #fff inset;
 }
@@ -105,6 +105,10 @@ section{
     color:var(--black);
     font-size: 2.5rem;
 }
+.header .user h4{
+    color:white;
+    font-size: 2.5rem;
+}
 
 .header .user p{
     color:var(--green);
@@ -122,8 +126,9 @@ section{
     border-radius: 5rem;
     font-size: 2rem;
     /* box-shadow: var(--box-shadow); */
+     /* box-shadow: var(--box-shadow); */
      box-shadow: var(--box-shadow);
-    color:var(--black);
+    color:black;
 }
 
 .header .navbar a:hover{
