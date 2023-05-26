@@ -1,0 +1,50 @@
+.gallery {
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+  }
+  
+  .gallery img {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.8s ease-in-out;
+  }
+  
+  .gallery img:nth-child(1) {
+    transform: rotateY(0deg) translateZ(100px);
+  }
+  
+  .gallery img:nth-child(2) {
+    transform: rotateY(45deg) translateZ(100px);
+  }
+  
+  .gallery img:nth-child(3) {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  
+  .gallery img:nth-child(4) {
+    transform: rotateY(135deg) translateZ(100px);
+  }
+  
+  .gallery img:nth-child(5) {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+  
+  .gallery img:nth-child(6) {
+    transform: rotateY(225deg) translateZ(100px);
+  }
+  
+  .gallery img:nth-child(7) {
+    transform: rotateY(270deg) translateZ(100px);
+  }
+  
+  .gallery img:nth-child(8) {
+    transform: rotateY(315deg) translateZ(100px);
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  
