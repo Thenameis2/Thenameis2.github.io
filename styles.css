@@ -319,4 +319,17 @@ main {
 .hidden {
     display: none;
   }
+  /* Example of a media query for tablets */
+@media (max-width: 768px) {
+    /* CSS styles for tablets and smaller devices */
+  }
   
+  /* Example of a media query for mobile devices */
+  @media (max-width: 480px) {
+    /* CSS styles for mobile devices */
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+    
