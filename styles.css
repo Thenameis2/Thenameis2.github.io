@@ -312,19 +312,17 @@ main {
 .hero img {
     max-width: 100%;
     height: auto;
-    border-radius: 50%; /* Optional: Add a border radius for a circular profile picture */
+    border-radius: 50%; 
 }
 
-  /* Add styles for the "hidden" class to hide sections */
+  
 .hidden {
     display: none;
   }
-  /* Example of a media query for tablets */
 @media (max-width: 768px) {
     /* CSS styles for tablets and smaller devices */
   }
   
-  /* Example of a media query for mobile devices */
   @media (max-width: 480px) {
     /* CSS styles for mobile devices */
   }
