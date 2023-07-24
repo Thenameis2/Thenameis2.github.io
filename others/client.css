@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  
+  .header {
+    background-image: url('supreme.png');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .top-buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  .top-button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  section {
+    height: 600px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .section-our-story {
+    background-color: #f2f2f2;
+    position: relative;
+  }
+    
+  
+  .section-our-story::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: blue;
+  }
+  .about-text {
+    text-align: center;
+   
+  }
+  
+  .about-text p:first-child {
+    text-align: center;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .section-our-story {
+    background-color: #ffffff;
+  }
+  
+  .section-areas-expertise {
+    background-color: #ffffff;
+  }
+  
+  .section-superhost-customer-service {
+    background-color: #fff;
+  }
+  
+  .section-what-we-offer {
+    background-color: #fff;
+  }
+  
+  .section-why-us {
+    background-color: #fff;
+  }
+  
+  .section-our-services {
+    background-color: #fff;
+  }
+  
+  .section-images {
+    background-color: #fff;
+  }
+  

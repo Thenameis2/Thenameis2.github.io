@@ -1,277 +1,205 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mihiretu Jackson's Personal page</title>
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mihiretu Jackson - Computer Science Major</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 </head>
 <body>
-    
-<!-- header section starts  -->
-
-<header class="header">
-
-    <div class="user">
-        <img src="Headshot.JPG" alt="mihiretu">
-        <h4>Mihiretu Jackson</h4>
-        <p>Software developer</p>
-    </div>
-
+  <header>
     <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#services">services</a>
-        <a href="#portfolio">portfolio</a>
-        <a href="#contact">contact</a>
-    </nav>
+        <ul>
+          <li><a href="#home" onclick="navigateToSection('home')">Home</a></li>
+          <li><a href="#about" onclick="navigateToSection('about')">About Me</a></li>
+          <li><a href="#projects" onclick="navigateToSection('projects')">Projects</a></li>
+          <li><a href="#resume" onclick="navigateToSection('resume')">Resume/CV</a></li>
+          <li><a href="#skills" onclick="navigateToSection('skills')">Skills</a></li>
+          <li><a href="#contact" onclick="navigateToSection('contact')">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hello, I'm Mihiretu Jackson</h1>
+        <p>I'm a passionate Computer Science major, ready to make an impact in the tech world.</p>
+        <!-- Add a professional photo here -->
+        
+      </div>
+    </section>
 
-</header>
+    <section id="about" class="about-me hidden">
+      <div class="about-me-content">
+        <h2>About Me</h2>
+        <img class="profile-image" src="Headshot.JPG" alt="Mihiretu Jackson">
+        <p>
+          Hi, I'm Mihiretu Jackson, a passionate Computer Science major with a strong interest in software development and problem-solving. I'm currently pursuing my degree at Virginia State University, where I have been exposed to a wide range of computer science topics, including data structures, algorithms, web development, and more.
+        </p>
+        <p>
+          I love taking on challenging projects and finding innovative solutions to real-world problems. Throughout my academic journey, I have actively participated in various coding competitions and hackathons, honing my skills and collaborating with like-minded individuals.
+        </p>
+        <p>
+          I am eager to apply my knowledge and skills in a professional environment where I can contribute to meaningful projects and continue learning and growing as a developer.
+        </p>
+      </div>
+    </section>
 
-<!-- header section ends -->
+    <section id="projects" class="projects hidden">
+      <div class="project">
+        <h2>Project 1: Jeopardy Game</h2>
+        <img src="jeopardy.png" alt="Project 1">
+        <p>
+          Project Description: A Python application designed to make learning fun through Jeopardy
+          <ul>
+            <li>It is an interactive jeopardy game using Python Tkinter GUI interface.</li>
+            <li>The game mimics most features of a Jeopardy game with the system expecting an input and interacting back if the answer is correct or incorrect.</li>
+            <li>The game has a score feature where it displays your score based on how well you are doing</li>
+          </ul>
+          
+        </p>
+        <p>
+          Technologies Used: Python, Tkinter
+        </p>
+        <p>
+           <a href="https://github.com/Thenameis2/JeopardyGame/blob/48696e00d3693264ab43748d9196dfb0b673d719/Jeopardy.py" target="_blank">GitHub Repository</a>
+        </p>
+      </div>
 
-<div id="menu-btn" class="fas fa-bars"></div>
+      <div class="project">
+        <h2>Project 2: Email Management Application</h2>
+        <img src="EmailApp.png" alt="Project 2">
+        <p>
+          Project Description: Developed an Email Management Application using Pythont
 
-<!-- theme toggler  -->
+          <ul>
+            <li>Integrated the Gmail API to enable efficient email searching and management </li>
+            <li>Implemented advanced email parsing with the email library to support various email formats, inline images, and attachments</li>
+            <li>Enabled users to search for emails by keywords, view email details, and delete selected emails with ease.</li>
+            <li>Utilized PySide6 for the application's interactive user interface (GUI) to ensure a smooth user experience.</li>
+            <li>Implemented asynchronous email fetching to maintain application responsiveness during long searches.</li>
+            <li>Prioritized security by handling OAuth2 credentials securely to protect user data</li>
+          </ul>
+                
+        </p>
+        <p>
+          Technologies Used: 🐍 Python, PySide6, Google API, BeautifulSoup, threading
+        </p>
+        <p>
+          <a href="EmailAppVideo.MOV" target="_blank">View Demo</a> |<a href="project2-repo.html" target="_blank">GitHub Repository</a>
+        </p>
+      </div>
 
-<div id="theme-toggler" class="fas fa-moon"></div>
+      <div class="project">
+        <h2>Project 3: Research Project Preliminary Application</h2>
+        <img src="Apple App.PNG" alt="Project 1">
+        <p>
+          Project Description: Member of an Apple and Propel sponsored project team to develop an application that can detect frustration in young readers and address it using artificial intelligence
+          <ul>
+            <li>Created an application using Swift UI. </li>
+            <li>The application has a built in video player that allows the user to directly pick videos from the files app and play them while at the same time having a functional camera feed that records them and later use that recording for AI training.</li>
+            <li>Researched the use of Apple watches when measuring data and presented those findings to the team</li>
+            <li>Transcribing video and audio data to confirm their quality for future analysis</li>
+            <li>Learning to use artificial intelligence tools to analyze video and audio data.</li>
+          </ul>
+        </p>
+        <p>
+          Technologies Used: UIKIt, AVKit, MobileCoreServices, AVCaptureSession, CoreML(future)
+        </p>
+        <p>
+          <!-- <a href="project1-demo.html" target="_blank">View Demo</a> | <a href="project1-repo.html" target="_blank">GitHub Repository</a> -->
+        </p>
+      </div>
+      <!-- <div class="project">
+        <h2>Project 1: Jeopardy Game</h2>
+        <img src="jeopardy.png" alt="Project 1">
+        <p>
+          Project Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nunc at quam dictum consequat.
+        </p>
+        <p>
+          Technologies Used: HTML, CSS, JavaScript, Node.js, Express.js
+        </p>
+        <p>
+          <a href="project1-demo.html" target="_blank">View Demo</a> | <a href="project1-repo.html" target="_blank">GitHub Repository</a>
+        </p>
+      </div> -->
 
-<!-- home section starts  -->
+      <!-- Add more project entries as needed -->
+    </section>
 
-<section class="home" id="home">
+    <section id="resume" class="resume hidden">
+      <div class="resume-content">
+        <h2>Resume/CV</h2>
+        <p>
+          You can download my resume/CV in PDF format using the link below:
+        </p>
+        <p>
+          <a href="Jackson_Mihiretu-Resume.pdf" target="_blank" download>Download Resume/CV</a>
+        </p>
+        <!-- You can also embed your resume if you prefer -->
+         <embed src="Jackson_Mihiretu-Resume.pdf" type="application/pdf" width="100%" height="600px" /> 
+      </div>
+    </section>
 
-    <div class="content">
-        <h3>Mihiretu Jackson</h3>
-        <p>Software developer</p>
-        <a href="Mihiretu Jackson's Resume-1.pdf" class="btn" target="_blank" >download Resume</a>
-    </div>
+    <section id="skills" class="skills hidden">
+      <div class="skills-content">
+        <h2>Skills</h2>
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Programming Languages: Java, Python, JavaScript, Swift, R</li>
+          <li>Web Development: HTML, CSS, JavaScript, React</li>
+          <li>Backend Development: Pthon, Java, JavaScript</li>
+          <li>Database: Firebase</li>
+          <li>Version Control: Git, GitHub</li>
+        </ul>
 
-    <div class="share">
-        <!-- <a href="#" class="fab fa-facebook-f"></a> -->
-        <!-- <a href="#" class="fab fa-twitter"></a> -->
-        <!-- <a href="#" class="fab fa-instagram" target="_blank"></a> -->
-        <a href="https://www.linkedin.com/in/mihiretu-jackson-81b155252/" class="fab fa-linkedin" target="_blank"></a>
-        <a href="https://github.com/Thenameis2" class="fab fa-github" target="_blank" ></a>
-    </div>
+        <h3>Additional Skills</h3>
+        <ul>
+          <li>Problem-Solving and Algorithms</li>
+          <li>Data Structures and Algorithms</li>
+          <li>Object-Oriented Design</li>
+          <li>Teamwork and Collaboration</li>
+          <li>Communication and Presentation</li>
+        </ul>
+      </div>
+    </section>
 
-</section>
+    <section id="contact" class="contact hidden">
+      <div class="contact-content">
+        <h2>Contact Me</h2>
+        <p>
+          I'm excited to hear from you! Feel free to reach out if you have any questions, opportunities, or just want to say hello. You can contact me through the form below or connect with me on my social media profiles.
+        </p>
+        <!-- Contact Form -->
+        <form action="process-form.php" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
 
-<!-- home section ends -->
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
 
-<!-- about section starts  -->
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-<section class="about" id="about">
+          <button type="submit">Send Message</button>
+        </form>
 
-    <h1 class="heading"> <span>about</span> me </h1>
-
-    <div class="row">
-
-        <div class="box-container">
-            <div class="box">
-                <h3>1</h3>
-                <p>year of experience</p>
-            </div>
-            <!-- <div class="box">
-                <h3>450+</h3>
-                <p>satisfied clients</p>
-            </div> -->
-            <div class="box">
-                <h3>10+</h3>
-                <p>working hours</p>
-            </div>
-            <!-- <div class="box">
-                <h3>10+</h3>
-                <p>awards won</p>
-            </div> -->
+        <!-- Social Media Links -->
+        <div class="social-media-links">
+          <a href="https://www.linkedin.com/in/mihiretu-jackson-81b155252" target="_blank" rel="noopener noreferrer">
+            <img src="LinkedIn-Symbole.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/Thenameis2" target="_blank" rel="noopener noreferrer">
+            <img src="GitHub-Mark.png" alt="GitHub">
+          </a>
+          <!-- Add more social media links as needed -->
         </div>
-
-        <div class="content">
-            <h3>My name is <span>Mihiretu Jackson</span></h3>
-            <p>I am a student at Virginia State University majoring in Computer Science. 
-                I have a strong interest in Software development.</p>
-                <p><b>"We must become bigger than we have been: more courageous, greater in spirit, larger in outlook"</b></p>
-                <p><i>Haile Selassie</i></p>
-            <!-- <a href="#" class="btn">contact me</a> -->
-        </div>
-
-    </div>
-
-    <div class="row">
-
-        <div class="progress">
-            <h3> web design <span>80%</span> </h3>
-            <div class="bar bar-1-1"><span></span></div>
-            <!-- <h3> graphic design <span>75%</span> </h3> -->
-            <!-- <div class="bar bar-1-2"><span></span></div> -->
-            <h3> UI/UX design <span>60%</span> </h3>
-            <div class="bar bar-1-3"><span></span></div>
-        </div>
-
-        <div class="progress">
-            <h3> HTML <span>85%</span> </h3>
-            <div class="bar bar-2-1"><span></span></div>
-            <h3> CSS <span>75%</span> </h3>
-            <div class="bar bar-2-2"><span></span></div>
-            <h3> javascript <span>65%</span> </h3>
-            <div class="bar bar-2-3"><span></span></div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- services section starts  -->
-
-<section class="services" id="services">
-
-    <h1 class="heading"> my <span>skills</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <i class="fas fa-code"></i>
-            <h3>web design</h3>
-            <p></p>
-        </div>
-
-        <!-- <div class="box">
-            <i class="fas fa-paint-brush"></i>
-            <h3>graphic design</h3>
-            <p></p>
-        </div> -->
-
-        <div class="box">
-            <i class="fas fa-mobile"></i>
-            <h3>responsive design</h3>
-            <p></p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-bullhorn"></i>
-            <h3>digital Art</h3>
-            <p></p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-search-dollar"></i>
-            <h3>Photography</h3>
-            <p></p>
-        </div>
-
-        <div class="box">
-            <i class="fab fa-wordpress"></i>
-            <h3>wordpress</h3>
-            <p></p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- services section ends -->
-
-<!-- portfolio section starts  -->
-
-<section class="portfolio" id="portfolio">
-
-    <h1 class="heading"> my <span>portfolio</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="jeopardy.png" alt="">
-            <div class="content">
-                <h3>project 01</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/img-2.jpg" alt="">
-            <div class="content">
-                <h3>project 02</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/img-3.jpg" alt="">
-            <div class="content">
-                <h3>project 03</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/img-4.jpg" alt="">
-            <div class="content">
-                <h3>project 04</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/img-5.jpg" alt="">
-            <div class="content">
-                <h3>project 05</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/img-6.jpg" alt="">
-            <div class="content">
-                <h3>project 06</h3>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- portfolio section ends -->
-
-<!-- contact section starts -->
-
-<form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php"></form>
-
-<section class="contact" id="contact">
-
-    <h1 class="heading"> <span>contact</span> me </h1>
-
-    <form action="">
-        <input type="text" placeholder="your name" class="box">
-        <input type="email" placeholder="your email" class="box">
-        <input type="text" placeholder="subject" class="box">
-        <textarea name="" class="box" placeholder="your message" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="send message" class="btn">
-    </form>
-
-</section>
-
-<!-- contact section ends -->
-
-<div class="credits"> created by <span>Mihiretu Jackson</span> | all rights reserved </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
+      </div>
+    </section>
+  </main>
+  <footer>
+    <!-- Footer content -->
+  </footer>
 </body>
 </html>
