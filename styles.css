@@ -121,7 +121,7 @@ main {
 /* a media query to change the layout for smaller devices */
 @media (max-width: 960px) {
     .projects {
-        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
 }
 
