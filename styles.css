@@ -114,8 +114,15 @@ main {
     background-image: linear-gradient(to bottom, #ffbc00, #ff4d4d);
     padding: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     gap: 20px;
+}
+
+/* a media query to change the layout for smaller devices */
+@media (max-width: 960px) {
+    .projects {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
 }
 
 .project {
